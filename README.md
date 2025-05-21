@@ -24,7 +24,7 @@ A fun and simple command-line Stone Paper Scissor game made using Python. This g
 - Scissor cuts Paper
 
 ## Screenshot
-![Screenshot](gamescreenshot.png)
+![Screenshot](gamescreenshot.jpg)
 
 ## Author
 **Raunak Raj**  
