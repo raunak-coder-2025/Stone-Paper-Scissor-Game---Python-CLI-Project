@@ -4,7 +4,7 @@ import random
   -1 = paper
    0 = scissor
 """
-def Game():
+def stone_paper_scissor_game():
     while True:
         try:
             
@@ -16,28 +16,36 @@ def Game():
 
             you = you_dict[your_choice]
 #Now we have 2 numbers(variables): comp and you
-            print(f"Your choice: {reverse_dict[you]}\nComputer's choice: {reverse_dict[comp]}")
+            print(f"\nYour choice: {reverse_dict[you]}\nComputer's choice: {reverse_dict[comp]}")
 #Game draw condition
             if comp == you:
-               print("Game draw")
+               print("Game draw🥲")
+               print("-"*40)
         
             else:
                 if comp == 1 and you == -1:
-                    print("You Won!")
+                    print("You Won!😀")
+                    print("-"*40)
                 elif comp == 1 and you == 0:
-                    print("You Lose!")
+                    print("You Lose!😞")
+                    print("-"*40)
                 elif comp == -1 and you == 0:
-                    print("You Won!")
+                    print("You Won!😀")
+                    print("-"*40)
                 elif comp == -1 and you == 1:
-                    print("You Lose!")
+                    print("You Lose!😞")
+                    print("-"*40)
                 elif comp == 0 and you == -1:
-                    print("You Lose!")
+                    print("You Lose!😞")
+                    print("-"*40)
                 elif comp == 0 and you == 1:
-                    print("You Won!")
+                    print("You Won!😀")
+                    print("-"*40)
                 
                     continue
         except:
-            print("Please choose a valid letter: ('s', 'p', or 'c')\nThankyou")
+            print("\nPlease choose a valid letter: ('s', 'p', or 'c')\nThankyou")
+            print("-"*40)
             
-Game()
+stone_paper_scissor_game()
         
